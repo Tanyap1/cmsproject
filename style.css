@@ -1,0 +1,569 @@
+/**
+Theme Name: Project
+Author: Tanya Pachkalov
+Description: This is the project for CMS Class
+**/
+
+
+header{
+    background: black ;
+    width:100%;
+    height: 100px;
+    box-shadow: 0px 0px 20px white;
+    padding:1rem 0;
+}
+.logo{
+    width: 120px;
+}
+body{
+    background: #daa37f;
+}
+.page-wrap{
+    padding: 2rem;
+}
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header li a{
+    padding:0 1rem;
+    color: aliceblue;
+text-decoration: none;}
+
+header .top-bar li{
+    position: relative;
+}
+header .top-bar li:last-child a{
+    padding-right: 0;
+}
+header .top-bar li .sub-menu {
+display:none ;
+z-index:999;
+position: absolute;
+top:100%;
+left:0;
+background:#fff;
+box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+padding: 0;
+list-style-type: none;
+width: 200px;
+border-radius: 4px;
+
+}
+header .top-bar li .sub-menu a{
+    color: brown;
+    padding: .25rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+header .top-bar li .sub-menu a:hover{
+    color: black;
+}
+
+header .top-bar .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+/*
+FOOTER
+*/
+.footer {
+    display: table;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .footerhalf {
+      width: 50%;
+      display: table-cell;
+      padding: 100px 140px;
+  }
+  
+  .footerhalf-2 {
+      background-image: url('./images/ac1a8610e0f820834dd10e6f2556f089.jpg');
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .btnfooter{
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 10px 20px;
+          display: inline-block;
+          border-radius: 100px;
+          transition: all .2s;
+          position: relative;
+    }
+    
+    .btnfooter:hover {
+          transform: translateY(-3px);
+          color: rgb(102, 102, 102);
+          box-shadow: 0 10px 20px rgba(207, 207, 207, 0.2);
+    }
+    
+    .btnfooter:active {
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btnfooter {
+          background-color: #fff;
+          color: #777;
+        font-size: 14px;
+    }
+
+  
+  .footerhalf-1 {
+      background-color: rgb(63, 63, 63);
+  }
+  
+  .footerbig-title {
+      margin-top: 0;
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #fff;
+  }
+  
+  .footertitle {
+      letter-spacing: 1px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #daa37f;
+  }
+  
+  .footerdesc {
+      color: #d7d7d7;
+      margin-bottom: 25px;
+  }
+
+  .small{
+      color: white;
+      margin-top: 3%;
+      margin-left: 1%;
+  }
+
+
+  /*header */
+  .header {
+    position: fixed;
+
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(39, 39, 30, 0.8),
+   rgba(61, 57, 43, 0.8)),
+   url('./images/images.jpg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+/*
+TYPE OF COFFEE*/
+.secttype{
+  background-color: white;
+  }
+  
+  .secttitle {
+      margin-top: 0;
+      text-transform: uppercase;
+      line-height: 40px;
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  
+  .sectsubtitle {
+      margin-bottom: 0;
+  }
+  
+  .coffee {
+      padding: 0 25px;
+  }
+  
+  .coffeename {
+      letter-spacing: 1px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 25px;
+      margin-bottom: 15px;
+  }
+  
+  .coffeeimg {
+      width: 90%;
+  }
+  .coffeeimg:hover{
+
+    transform: scale(1.2) rotate(-5deg); /*zoom*/
+
+  }
+  .coffeedescr {
+      margin: 0;
+      line-height: 23px;
+  }
+
+  .sectwhitetext{
+      color: #fff;
+  }
+ 
+/* HALF SECTION 
+*/
+.halfsectsecond {
+    background-image: url('http://image.ibb.co/c339Yb/section_bg_9.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      background-color:rgb(85, 85, 85);
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;}
+.half {
+    width: 50%;
+    display: table-cell;
+    background-color:rgb(92, 83, 83);
+}
+
+.halfsectfirst {
+    padding: 150px;
+   background-color:#6f4e37;
+}
+
+.descriptionp {
+    margin-bottom: 40px;
+}
+.descriptionp1 {
+    color: white;
+    margin-left: -30%;
+
+}
+
+.descriptiontitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.descriptiontitle1{
+    margin-top: 30%;
+    color: white;
+    margin-left: -30%;
+}
+.btnfooter1{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+/*
+GREAT COFFEE
+*/
+.sectgreat {
+    background-image: url('images/shutterstock_525495457-1-810x540.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+      background-color:#fff;
+      width: 100%;
+      height:450px ;
+}
+
+/*
+THE BEST COFFEE SHOP
+*/
+.sectbest {
+    background-image: url('https://image.ibb.co/mh6S3b/section_bg_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  padding: 160px 0;
+}
+
+.besttitle {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #daa37f;
+}
+
+.bestimg {
+    width: 50px;
+}
+
+.bestmargin {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.bestbottom {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+
+/*
+BLOG IMAGES
+*/
+
+.last-articles {
+    margin-top: 50px;
+}
+.article-pre__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   padding-bottom: 80%;
+}
+
+.article-pre {
+    background-color: #fff;
+}
+
+.article-pre__title {
+    letter-spacing: 1px;
+    font-size: 16px;
+  margin-top:0;
+    text-transform: uppercase;
+    font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.article-pre__date {
+    color: #767676;
+    line-height: 23px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+
+.article-pre__info {
+    padding: 25px 20px 20px 20px;
+}
+.article-pre__ex {
+    margin: 0;
+    line-height: 22px;
+}
+
+.article-pre-1 .article-pre__img {
+    background-image: url('images/IMG_641923-600x600.jpg');
+}
+
+.article-pre-2 .article-pre__img {
+    background-image: url('images/coffee-exclusive.jpg');
+}
+
+.article-pre-3 .article-pre__img {
+    background-image: url('images/Turkish.jpg');
+}
+
+.tags{color: #6f4e37;}
+.widget{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+::marker{
+    display: none;
+}
+
+
+
+.headabout {
+    position: fixed;
+    height: 200px;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(80, 80, 80, 0.8),
+   rgba(61, 57, 43, 0.8)),
+   url('./images/images.jpg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+
+}
+/*blog card  */
+
+.card{
+padding: 2px;
+margin: 2%;
+box-shadow: 0px 0px 20px grey;
+}
+
+/*contact form */
+.contact form {
+    border-radius: 9px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,.15);
+    padding: 1em;
+    margin-top: 1em;
+background-image: url("./images/istockphoto-1135359711-612x612.jpg");  
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  .sectwhite-text{
+      color:#daa37f;
+  }
+  .contact form input, .contact form textarea {
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+    .h2-contact{
+        color: #fff;
+    }
+.card-body1{
+    background-color:#6f4e37;
+height: 100px;
+}
+.card-img-top{
+    width: 180px;
+    height: 150px;
+}
+.col-md-3{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.cofeesorts{
+    width: 740px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.contacts{
+    margin-top: 0;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(80, 80, 80, 0.8),
+   rgba(170, 170, 170, 0.8)),
+   url('./images/istockphoto-1220101964-612x612.jpg');
+    
+}
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #6f4e37;
+    color: #fff;
+    margin:2px
+}
+
+.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+
+    background-color: #494949;
+
+}
+.woocommerce-input-wrapper{
+    width:100%;
+    display: block;
+}
+.product-thumbnail{
+    width: 400px;
+}
+
+.woocommerce-product-gallery__image{
+    width: 400px;
+}
+
+.size-woocommerce_thumbnail{
+width: 200px;
+}
+
+
+
+
+
+.products {
+text-align: center;
+}
+ ul{
+    list-style-type: none; /* Remove bullets */
+
+    text-decoration: none;
+}
+.wp-block-categories-list {
+    list-style-type: circle;
+}
+
+.coffeename a{
+    color: #494949;
+}
+.coffeename a:hover{
+color:#9c6947;
+}
